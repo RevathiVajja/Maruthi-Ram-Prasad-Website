@@ -12,7 +12,6 @@ const NAV_LINKS = [
     { label: "About The book", href: "/how-to-raise-a-genius-child" },
     { label: "Know Your Author", href: "/about-the-author" },
     { label: "Reviews", href: "/reviews" },
-    { label: "Contact", href: "/contact" },
 ];
 
 function useTheme() {
@@ -135,7 +134,7 @@ export default function Navbar() {
                                         Mybookzz
                                     </span>
                                     <span className="text-muted-foreground text-[0.9rem] font-medium truncate tracking-wide">
-                                        Read Today Lead Tomorrow
+                                        Read Today • Lead Tomorrow
                                     </span>
                                 </span>
                             </Link>
@@ -270,7 +269,7 @@ export default function Navbar() {
                                 Mybookzz
                             </span>
                             <span className="text-muted-foreground text-[0.90rem]">
-                                Read Today Lead Tomorrow
+                                Read Today • Lead Tomorrow
                             </span>
                         </span>
                     </Link>

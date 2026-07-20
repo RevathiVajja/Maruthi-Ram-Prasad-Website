@@ -8,17 +8,17 @@ const CERTIFICATES = [
     {
         src: "/images/certificate1.png",
         alt: "Certificate of Achievement — Maruthi Ram Prasad Pelluri",
-        title: "Certificate of Achievement",
+        title: "Certified Life Skills And Value Education Trainer",
     },
     {
         src: "/images/certificate2.png",
         alt: "Certification — Maruthi Ram Prasad Pelluri",
-        title: "Professional Certification",
+        title: "International School Award 2019-22",
     },
     {
         src: "/images/certificate3.png",
         alt: "Accreditation Certificate — Maruthi Ram Prasad Pelluri",
-        title: "Accreditation",
+        title: "Positive Parenting Coach",
     },
     {
         src: "/images/certificate4.png",

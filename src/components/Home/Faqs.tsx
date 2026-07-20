@@ -223,7 +223,7 @@ export default function FaqsSection() {
     return (
         <section
             id="faqs"
-            className="relative w-full overflow-hidden bg-background py-12 px-4 sm:px-6 lg:px-12"
+            className="relative w-full overflow-hidden bg-background md:py-12 py-8 px-4 sm:px-6 lg:px-12"
             aria-label="Frequently Asked Questions"
         >
             {/* Ambient glow orbs */}

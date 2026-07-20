@@ -1,6 +1,3 @@
-"use client";
-
-import { useEffect, useRef, useState } from "react";
 
 const BIO_PARAGRAPHS = [
     "Maruthi Ram Prasad is a distinguished academician with over three decades of experience in teaching, training, and administration. A tech-savvy professional, he has conducted numerous training sessions for students, teachers, and principals at regional, national, and international levels.",
@@ -12,26 +9,9 @@ const BIO_PARAGRAPHS = [
 ];
 
 export default function AuthorBioSection() {
-    const sectionRef = useRef<HTMLDivElement>(null);
-    const [isVisible, setIsVisible] = useState(false);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    setIsVisible(true);
-                    observer.disconnect();
-                }
-            },
-            { threshold: 0.1 }
-        );
-        if (sectionRef.current) observer.observe(sectionRef.current);
-        return () => observer.disconnect();
-    }, []);
 
     return (
         <section
-            ref={sectionRef}
             className="relative w-full overflow-hidden py-16 md:py-12 px-6"
             aria-label="Author Biography"
         >
@@ -72,11 +52,7 @@ export default function AuthorBioSection() {
 
             <div className="relative z-10 max-w-4xl mx-auto">
                 <div
-                    className="flex flex-col gap-6 text-[1.05rem] md:text-[1.15rem] leading-relaxed md:leading-[1.8] text-foreground/90"
-                    style={{
-                        opacity: isVisible ? 1 : 0,
-                        animation: isVisible ? "bio-fadeUp 0.8s cubic-bezier(0.22,1,0.36,1) forwards" : "none"
-                    }}
+                    className="flex flex-col gap-6 text-[1.05rem] md:text-[1.15rem] leading-relaxed md:leading-[1.8] text-foreground/90 text-justify"
                 >
                     {BIO_PARAGRAPHS.map((text, idx) => (
                         <p key={idx}>

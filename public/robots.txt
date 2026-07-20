@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Block non-content routes
+Disallow: /api/
+Disallow: /buy
+
+Sitemap: https://www.mybookzz.com/sitemap.xml

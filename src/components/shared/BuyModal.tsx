@@ -38,7 +38,7 @@ const OPTIONS = [
         color: "#FF9900",
         bg: "rgba(255,153,0,0.10)",
         border: "rgba(255,153,0,0.28)",
-        href: "amazon-geo", // resolved dynamically
+        href: "amazon-geo",
     },
     {
         id: "flipkart",
@@ -69,6 +69,16 @@ const OPTIONS = [
         bg: "rgba(16,185,129,0.10)",
         border: "rgba(16,185,129,0.28)",
         href: "https://read.amazon.com/sample/B0H1F7LTV6?clientId=share",
+    },
+    {
+        id: "buy-direct-from-author",
+        logo: "/image.png",
+        label: "Buy from Author (Only In India)",
+        sub: "Get your signed copy",
+        color: "#104eb9ff",
+        bg: "rgba(16, 75, 185, 0.1)",
+        border: "rgba(16, 69, 185, 0.28)",
+        href: "https://escuela.in/supplies/",
     },
 ];
 
